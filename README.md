@@ -42,11 +42,12 @@ npm start
 - [ ] Pruebas unitarias de la API
 
 ## Arquitectura
-mermaid
+```mermaid
 graph LR
-A[Usuario / Cliente] --> B[Frontend - React]
-B --> C[API REST - Node.js]
-C --> D[(Base de Datos MySQL)]
+A[Usuario] --> B[Frontend]
+B --> C[API]
+C --> D[(Base de datos)]
+```
 ## Contribuidores
 
 - **Yordi Rodríguez** - [@yordirodriguez-bot](https://github.com/yordirodriguez-bot)
