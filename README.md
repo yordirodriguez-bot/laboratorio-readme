@@ -1,31 +1,52 @@
-# Laboratorio README
+# Sistema de Gestión de Biblioteca Virtual
+![Estado](https://img.shields.io/badge/build-passing-brightgreen) ![Versión](https://img.shields.io/badge/version-1.0.0-blue)
 
-![Estado](https://img.shields.io/badge/build-passing-brightgreen)
- 
-Proyecto de práctica para aprender Markdown avanzado en GitHub.
- 
+Una plataforma web integral para la gestión de préstamos, catálogo de libros y reportes en tiempo real para instituciones educativas.
+
+## Tabla de contenidos
+- [Descripción](#descripción)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estado de funcionalidades](#estado-de-funcionalidades)
+- [Pendientes](#pendientes)
+- [Arquitectura](#arquitectura)
+- [Contribuidores](#contribuidores)
+
 ## Descripción
- 
-Este repositorio documenta paso a paso mi aprendizaje de Markdown:
-tablas, listas de tareas, badges y diagramas.
+Este proyecto busca automatizar el registro y préstamo de libros de forma digital. Permite a los usuarios consultar el catálogo disponible, gestionar reservas y generar reportes administrativos en tiempo real.
+
+## Instalación
+bash
+git clone https://github.com/yordirodriguez-bot/laboratorio-readme.git
+cd laboratorio-readme
+npm install
+
+## Uso
+bash
+npm start
 
 ## Estado de funcionalidades
- 
-| Función  | Estado      |
-|----------|-------------|
-| Login    | Listo       |
-| Reportes | En progreso |
 
-## Pendientes
- 
+| Función | Estado |
+|---|---|
+| Autenticación de usuarios | Listo |
+| Búsqueda de libros | Listo |
+| Módulo de reservas | En progreso |
+| Reportes PDF | Pendiente |
+
+## tareas Pendientes
+
 - [x] Diseño de la base de datos
-- [ ] Pruebas unitarias
+- [x] Maquetado de la interfaz principal
+- [ ] Integración con pasarela de pagos
+- [ ] Pruebas unitarias de la API
 
 ## Arquitectura
- 
-```mermaid
+mermaid
 graph LR
-    A[Usuario] --> B[Frontend]
-    B --> C[API]
-    C --> D[(Base de datos)]
-```
+A[Usuario / Cliente] --> B[Frontend - React]
+B --> C[API REST - Node.js]
+C --> D[(Base de Datos MySQL)]
+## Contribuidores
+
+- **Yordi Rodríguez** - [@yordirodriguez-bot](https://github.com/yordirodriguez-bot)
